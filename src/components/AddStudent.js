@@ -82,7 +82,7 @@ class AddStudent extends Component {
                 <input type='text' name='statusCode' onChange={this.statusChangeHandler}/>
                 <br></br>
                 <br></br>
-                <input type="submit"/>
+                <input type="submit" name='submitButton'/>
                 </form>
             </div>
         )
