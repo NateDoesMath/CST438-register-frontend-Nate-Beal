@@ -44,7 +44,8 @@ class AddStudent extends Component {
         fetch(`${SERVER_URL}student?email=` + email + `&name=` + name,
             {
                 method: 'POST',
-                headers: { 'X-XSRF-TOKEN': token }
+                headers: { 'X-XSRF-TOKEN': token },
+                console: 'include'
             })
         .then(res => {
             if (res.ok) {
